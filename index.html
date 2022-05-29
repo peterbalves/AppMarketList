@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                background-color: rgba(128, 0, 128, 255);
+                text-align: center;
+                color:azure;
+                padding: 20px;
+            }
+            .lista-cadastro{
+                display:flex;
+                margin:20px 0;
+                padding:0 20px;
+            }
+            .lista-cadastro input[type=text]{
+                flex:1;
+                height:40px;
+                padding-left:20px;
+
+            }
+            .lista-produto-single{
+                padding:10px 0;
+                margin:20px 0;
+                border-bottom:1px solid #ccc;
+                display:flex;
+            }
+            .lista-produto-single h3{
+                flex:1;
+                padding:0 20px;
+            }
+            h3.price-produto{
+                text-align: right;
+                font-size:17px;
+            }
+            h3.price-produto > span{
+                background-color: rgba(128, 0, 128, 255);
+                padding:8px 10px;
+                border-radius:20px;
+            }
+            .soma-produto{
+                margin:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>App Lista De Mercado</h2>
+        </header>
+        <div class="lista-cadastro">
+            <input type="text" placeholder="Nome do produto..."
+            name="nome_produto" />
+            <input type="number" placeholder="Valor do produto" 
+            name="price_produto" />
+            <input type="submit" name="acao" value="Cadastrar" />
+        </div>
+        <div class="lista-produto">
+
+        </div>
+        <div class="soma-produto">
+            <h1>Total: R$0</h1>
+        </div>
+
+        <button name="limpar">Limpar</button>
+
+        <script src="Mercado.js"></script>
+    </body>
+</html>
